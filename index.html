@@ -44,6 +44,11 @@
 .family-tree details>ul::before{top:-16px;height:16px}
 @media(max-width:800px){.family-tree li{padding-left:3px;padding-right:3px}.family-tree details>summary,.family-tree .leaf{min-width:104px;max-width:145px;font-size:11px}}
 /* Printing is handled in a dedicated tree-only document, not by printing this website. */
+
+/* The genealogy is now laid out as a compact, staggered vector drawing. */
+#treeScroll{overflow:auto;max-height:78vh;padding:12px;background:#fffdfa}
+#familyTree{display:block!important;width:max-content!important;min-width:0!important;padding:0!important;margin:0!important;border:0!important}
+#familyTree>svg{max-width:none!important}
 </style>
 </head>
 <body>
@@ -54,7 +59,7 @@
 <section class="content" id="founder"><p class="eyebrow">The Founder</p><h2>Bibhu “Bibs” Acharya</h2><img class="section-image portrait" src="2.png" alt="Bibhu Acharya, founder"><p>An engineer by profession, a writer by passion, and an explorer by nature.</p><p>Born in Cuttack and raised in Keonjhar, Odisha, Bibs began his professional journey with the Indian Navy before pursuing an international career in naval architecture, shipbuilding and maritime engineering.</p><p>Beyond engineering, he is a poet, author, motivational speaker and lifelong explorer of philosophy, spirituality and human potential.</p><p>His belief is simple: kindness transcends borders, wisdom grows when shared, and humanity comes first.</p></section>
 <section class="content" id="publications"><p class="eyebrow">Our Publications</p><h2>Books, Poetry &amp; Ideas</h2><img class="section-image portrait" src="5.png" alt="Literary author portrait"><div class="cards"><div class="card"><h3>1600 Mega Joules</h3><p>Awaken the Hidden Sun Within</p><a href="https://1600megajoules.com/">Explore the Book</a></div><div class="card"><h3>The Tomato Principle</h3><p>A forthcoming literary work.</p></div><div class="card"><h3>Devotional Poetry Collection</h3><p>Preserving the Krishna devotional poetry of Dwarikanath Acharya.</p><p><em>In preparation.</em></p></div></div></section>
 <section class="content" id="heritage"><p class="eyebrow">Our Heritage</p><h2>Rooted in Legacy. Reaching Toward Tomorrow.</h2><div class="heritage-images"><figure><img src="4.png" alt="Black and white institutional seal"><figcaption><em>The Institutional Seal</em></figcaption></figure><img src="7.png" alt="Traditional heritage portrait"></div><p>Āchārya Prapañca honours the literary, spiritual and cultural heritage of the Acharya family.</p><p>Among the treasures of this heritage are the devotional compositions of Dwarikanath Acharya, whose Krishna janana and bhajana poetry reflects a deeply personal tradition of devotion and artistic expression.</p><p>We aspire to preserve these writings for future generations while creating space for new voices, new ideas and new possibilities.</p></section>
-<section class="content lineage" id="lineage"><p class="eyebrow">Our Lineage</p><h2>The Roots That Ground Us. The Branches That Carry Us Forward.</h2><div class="lineage-intro"><p>Every family carries a universe of stories. This living genealogy preserves the names, relationships and memories of the Acharya family, with space for future discoveries.</p></div><div class="tree-controls"><input id="treeSearch" type="search" placeholder="Search a family member…" aria-label="Search family tree"><button id="expandAll" type="button">Expand all</button><button id="collapseAll" type="button">Collapse all</button><button id="printTree" type="button">Print / Save as PDF (A2)</button></div><p class="tree-help">The chart flows from top to bottom. Scroll horizontally to explore wide generations; click the ▸ arrow beside a name to reveal descendants. Spouses appear beside partners. “Name to be added” entries are reserved for future updates. The Print / Save as PDF button opens a separate tree-only A2 landscape print view, with every branch expanded. The complete tree is fitted to one sheet, so text may be small.</p><p class="tree-status" id="treeStatus" role="status"></p><div class="tree-scroll" id="treeScroll"><ul class="family-tree" id="familyTree"></ul></div><div class="lineage-features"><div class="lineage-feature"><strong>Our Ancestors</strong><p>Remembering those who shaped our beginnings.</p></div><div class="lineage-feature"><strong>Our Generations</strong><p>Tracing relationships across time.</p></div><div class="lineage-feature"><strong>Our Stories</strong><p>Preserving names, photographs and histories.</p></div></div></section>
+<section class="content lineage" id="lineage"><p class="eyebrow">Our Lineage</p><h2>The Roots That Ground Us. The Branches That Carry Us Forward.</h2><div class="lineage-intro"><p>Every family carries a universe of stories. This living genealogy preserves the names, relationships and memories of the Acharya family, with space for future discoveries.</p></div><div class="tree-controls"><input id="treeSearch" type="search" placeholder="Search a family member…" aria-label="Search family tree"><button id="expandAll" type="button">Expand all</button><button id="collapseAll" type="button">Collapse all</button><button id="printTree" type="button">Print / Save as PDF (A2)</button></div><p class="tree-help">The chart flows from top to bottom with compact, staggered sibling branches. Scroll horizontally to explore wide generations; click the ▸ arrow beside a name to reveal descendants. Spouses appear beside partners. “Name to be added” entries are reserved for future updates. The Print / Save as PDF button opens a separate tree-only A2 landscape print view, with every branch expanded. The complete tree is fitted to one sheet, so text may be small.</p><p class="tree-status" id="treeStatus" role="status"></p><div class="tree-scroll" id="treeScroll"><ul class="family-tree" id="familyTree"></ul></div><div class="lineage-features"><div class="lineage-feature"><strong>Our Ancestors</strong><p>Remembering those who shaped our beginnings.</p></div><div class="lineage-feature"><strong>Our Generations</strong><p>Tracing relationships across time.</p></div><div class="lineage-feature"><strong>Our Stories</strong><p>Preserving names, photographs and histories.</p></div></div></section>
 <section class="content" id="insights"><p class="eyebrow">Insights &amp; Media</p><h2>Thoughts That Invite Reflection</h2><img class="section-image portrait" src="6.png" alt="Editorial portrait"><p>Essays, poetry, reflections and perspectives on consciousness, humanity, personal growth and the art of living.</p><p><em>Coming soon.</em></p></section>
 <section class="content" id="connect"><p class="eyebrow">Connect</p><h2>Every Meaningful Conversation Begins Somewhere</h2><p>For literary enquiries, ideas and collaborations, we welcome thoughtful conversations.</p><p><em>Contact details will be added before launch.</em></p></section>
 </main><footer><strong>Āchārya Prapañca</strong><p>Illuminating Minds. Awakening Souls. Elevating Consciousness.</p><p><strong>One Consciousness at a Time.</strong></p><p>© 2026 Āchārya Prapañca. All rights reserved.</p></footer>
@@ -115,56 +120,63 @@ const family=P('Earliest known ancestor — name unknown',[
     P('Mahendra Acharya',[U('Son 1 — name to be added'),U('Son 2 — name to be added'),U('Son 3 — name to be added'),U('Son 4 — name to be added')]),
     P('Srikanta Acharya (son of Biswanath)',[P('Jagat Jiban Acharya')])])])])
 ]);
+// Compact staggered genealogy: vector layout, not nested CSS flexboxes.
 const tree=document.getElementById('familyTree');
-function makeNode(person,depth=0){const li=document.createElement('li');const hasChildren=person.children&&person.children.length;const row=document.createElement(hasChildren?'summary':'span');if(!hasChildren)row.className='leaf';const name=document.createElement('span');name.className=person.note==='placeholder'?'placeholder':'person';name.textContent=person.name;row.appendChild(name);if(person.spouse){const s=document.createElement('span');s.className='spouse';s.textContent='  +  '+person.spouse;row.appendChild(s)}if(person.note&&person.note!=='placeholder'){const n=document.createElement('span');n.className='note';n.textContent=' ('+person.note+')';row.appendChild(n)}if(hasChildren){const details=document.createElement('details');if(depth<2)details.open=true;details.appendChild(row);const ul=document.createElement('ul');person.children.forEach(child=>ul.appendChild(makeNode(child,depth+1)));details.appendChild(ul);li.appendChild(details)}else li.appendChild(row);return li}
-tree.appendChild(makeNode(family));
-const allDetails=()=>Array.from(tree.querySelectorAll('details'));
-document.getElementById('expandAll').addEventListener('click',()=>{allDetails().forEach(d=>d.open=true);document.getElementById('treeStatus').textContent='All recorded branches expanded.'});
-document.getElementById('collapseAll').addEventListener('click',()=>{allDetails().forEach(d=>d.open=false);document.getElementById('treeStatus').textContent='Branches collapsed. Click any arrow to explore.'});
-document.getElementById('treeSearch').addEventListener('input',e=>{const q=e.target.value.trim().toLocaleLowerCase();tree.querySelectorAll('.matched').forEach(el=>el.classList.remove('matched'));if(!q){document.getElementById('treeStatus').textContent='';return}let count=0;tree.querySelectorAll('summary,.leaf').forEach(row=>{if(row.textContent.toLocaleLowerCase().includes(q)){count++;row.closest('li').classList.add('matched');let ancestor=row.parentElement;while(ancestor&&ancestor!==tree){if(ancestor.tagName==='DETAILS')ancestor.open=true;ancestor=ancestor.parentElement}}});document.getElementById('treeStatus').textContent=count+' matching record(s).'});
+const scroller=document.getElementById('treeScroll');
+const status=document.getElementById('treeStatus');
+const NS='http://www.w3.org/2000/svg';
+const BOX_W=156, BOX_H=57, H_GAP=10, ROW=101;
+let serial=0;
+function identify(p,depth=0){p._id=++serial;p._depth=depth;p._collapsed=depth>=2;(p.children||[]).forEach(c=>identify(c,depth+1))}
+identify(family);family._collapsed=false;
+const walk=(p,fn)=>{fn(p);(p.children||[]).forEach(c=>walk(c,fn))};
+function svgEl(tag,attrs={},parent){const e=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,String(v)));if(parent)parent.appendChild(e);return e}
+function visibleKids(p,expanded){return (expanded||!p._collapsed)?(p.children||[]):[]}
+function measure(p,expanded){const kids=visibleKids(p,expanded);kids.forEach(k=>measure(k,expanded));p._width=kids.length?Math.max(BOX_W,kids.reduce((a,k)=>a+k._width,0)+(kids.length-1)*H_GAP):BOX_W}
+function place(p,left,depth=0,expanded=false){const kids=visibleKids(p,expanded);p._y=depth*ROW+(depth>1?(p._id%3-1)*12:0);if(kids.length){let x=left;kids.forEach(k=>{place(k,x,depth+1,expanded);x+=k._width+H_GAP});p._x=(kids[0]._x+kids[kids.length-1]._x)/2}else p._x=left+p._width/2}
+function lines(text,maxChars=22,maxLines=3){const words=String(text).split(/\s+/),out=[];let line='';for(const w of words){if(line && (line+' '+w).length>maxChars){out.push(line);line=w}else line=line?line+' '+w:w}if(line)out.push(line);if(out.length>maxLines){out[maxLines-1]=out.slice(maxLines-1).join(' ');return out.slice(0,maxLines)}return out}
+function makeText(g,text,cy,color,size,maxLines=2){const chunks=lines(text,23,maxLines);const txt=svgEl('text',{'text-anchor':'middle',fill:color,'font-size':size,'font-family':'Arial, sans-serif'},g);const start=cy-(chunks.length-1)*7;chunks.forEach((t,i)=>{const span=svgEl('tspan',{x:0,y:start+i*14},txt);span.textContent=t});return txt}
+function createGraphic(expanded=false,search=''){
+ measure(family,expanded);place(family,8,0,expanded);
+ const shown=[];function collect(p){shown.push(p);visibleKids(p,expanded).forEach(collect)}collect(family);
+ const width=Math.max(BOX_W+20,family._width+16),height=Math.max(...shown.map(p=>p._y+BOX_H))+18;
+ const svg=svgEl('svg',{xmlns:NS,viewBox:`0 0 ${width} ${height}`,width,height,role:'img','aria-label':'Acharya family genealogy, ancestors at top and descendants below'});
+ svg.style.display='block';svg.style.maxWidth='none';svg.style.background='#fffdfa';
+ const edges=svgEl('g',{fill:'none',stroke:'#b78a3c','stroke-width':1.35,'stroke-linejoin':'round'},svg);
+ for(const p of shown){const kids=visibleKids(p,expanded);if(!kids.length)continue;const startY=p._y+BOX_H,barY=startY+12;
+ // Each child gets an individual, variable-length connector; staggered nodes never imply different parentage.
+ svgEl('path',{d:`M${p._x} ${startY} V${barY}`},edges);
+ if(kids.length>1)svgEl('path',{d:`M${kids[0]._x} ${barY} H${kids[kids.length-1]._x}`},edges);
+ for(const child of kids)svgEl('path',{d:`M${child._x} ${barY} V${child._y}`},edges);
+ }
+ const nodes=svgEl('g',{},svg);
+ for(const p of shown){const group=svgEl('g',{transform:`translate(${p._x},${p._y})`,'data-person-id':p._id},nodes);const hasKids=(p.children||[]).length>0;
+ const match=search&&[p.name,p.spouse,p.note].join(' ').toLowerCase().includes(search);
+ const rect=svgEl('rect',{x:-BOX_W/2,y:0,width:BOX_W,height:BOX_H,rx:7,fill:match?'#fff0ad':'#ffffff',stroke:match?'#a97825':'#ddc59b','stroke-width':match?2:1},group);
+ if(hasKids){group.style.cursor='pointer';group.setAttribute('tabindex','0');group.setAttribute('role','button');group.setAttribute('aria-label',(p._collapsed?'Expand ':'Collapse ')+p.name);const toggle=()=>{p._collapsed=!p._collapsed;render()};group.addEventListener('click',toggle);group.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle()}})}
+ const nameLines=lines(p.name,23,2);const nameY=p.spouse?18:((p.note&&p.note!=='placeholder')?21:27);
+ makeText(group,p.name,nameY,p.note==='placeholder'?'#777':'#28394b',p.note==='placeholder'?10:11,2);
+ if(p.spouse)makeText(group,'+ '+p.spouse,43,'#8d6025',9,1);
+ else if(p.note&&p.note!=='placeholder')makeText(group,p.note,44,'#697585',8,1);
+ if(hasKids){const t=svgEl('text',{x:-BOX_W/2+6,y:34,fill:'#a97825','font-size':12,'font-family':'Arial'},group);t.textContent=expanded||!p._collapsed?'▾':'▸'}
+ }
+ return {svg,width,height,shown};
+}
+function render(){const q=document.getElementById('treeSearch').value.trim().toLowerCase();if(q){walk(family,p=>{if([p.name,p.spouse,p.note].join(' ').toLowerCase().includes(q)){/* open ancestors below */}})}const oldX=scroller.scrollLeft,oldY=scroller.scrollTop;const {svg,shown}=createGraphic(false,q);tree.replaceChildren(svg);tree.style.cssText='display:block;list-style:none;padding:0;margin:0;width:max-content;min-width:0';scroller.scrollLeft=oldX;scroller.scrollTop=oldY;status.textContent=q?shown.filter(p=>[p.name,p.spouse,p.note].join(' ').toLowerCase().includes(q)).length+' visible match(es).':''}
+function openMatches(p,q){let found=[p.name,p.spouse,p.note].join(' ').toLowerCase().includes(q);let below=false;(p.children||[]).forEach(c=>{if(openMatches(c,q))below=true});if(below)p._collapsed=false;return found||below}
+document.getElementById('expandAll').addEventListener('click',()=>{walk(family,p=>p._collapsed=false);render();status.textContent='All branches expanded. Scroll to explore.'});
+document.getElementById('collapseAll').addEventListener('click',()=>{walk(family,p=>p._collapsed=true);family._collapsed=false;render();status.textContent='Branches collapsed. Click a name to expand.'});
+document.getElementById('treeSearch').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();if(q)openMatches(family,q);render()});
+render();
 document.getElementById('printTree').addEventListener('click',()=>{
-  // Build a separate print-only page: the main website must never be printed.
-  const popup=window.open('','_blank');
-  if(!popup){document.getElementById('treeStatus').textContent='Please allow pop-ups for this website, then click Print again.';return}
-  const cloned=tree.cloneNode(true);
-  cloned.querySelectorAll('details').forEach(d=>d.setAttribute('open',''));
-  cloned.querySelectorAll('.matched').forEach(el=>el.classList.remove('matched'));
-  const stylesheet=Array.from(document.querySelectorAll('style')).map(el=>el.textContent).join('\n');
-  const html=`<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Āchārya Prapañca — Complete Family Tree (A2)</title><style>${stylesheet}
-  @page{size:A2 landscape;margin:10mm}
-  html,body{margin:0!important;padding:0!important;background:white!important;overflow:visible!important}
-  body{font-family:Arial,sans-serif!important}
-  .print-title{text-align:center;font:bold 17px Georgia,serif;color:#81571d;margin:0 0 5mm;line-height:1.2}
-  #printViewport{width:574mm;height:360mm;overflow:hidden;position:relative;break-inside:avoid;page-break-inside:avoid}
-  #printContent{position:absolute;left:0;top:0;transform-origin:top left;width:max-content}
-  .family-tree{min-width:max-content!important;width:max-content!important}
-  .family-tree details>summary,.family-tree .leaf{font-size:13px!important;box-shadow:none!important}
-  .family-tree .spouse{font-size:11px!important}.family-tree .note{font-size:10px!important}
-  .family-tree li,.family-tree details{break-inside:avoid!important}
-  .family-tree li{padding:11px 2px 0!important}
-  .family-tree details>summary,.family-tree .leaf{min-width:106px!important;max-width:145px!important;min-height:40px!important;font-size:12px!important;padding:4px 7px!important}
-  .family-tree details>ul{margin-top:13px!important}
-  .family-tree details>ul::before{top:-13px!important;height:13px!important}
-  @media print{
-    html,body{width:574mm!important;height:390mm!important;overflow:hidden!important}
-    #printViewport{break-inside:avoid!important;page-break-inside:avoid!important}
-    .print-title{margin-top:0!important}
-  }
-  </style></head><body><h1 class="print-title">Āchārya Prapañca — Family Genealogy</h1><div id="printViewport"><div id="printContent">${cloned.outerHTML}</div></div></body></html>`;
-  popup.document.open();popup.document.write(html);popup.document.close();
-  const fitAndPrint=()=>{
-    const viewport=popup.document.getElementById('printViewport');
-    const content=popup.document.getElementById('printContent');
-    if(!viewport||!content)return;
-    const w=content.scrollWidth,h=content.scrollHeight;
-    const scale=Math.min(1,viewport.clientWidth/w,viewport.clientHeight/h);
-    content.style.transform=`scale(${scale})`;
-    content.style.left=Math.max(0,(viewport.clientWidth-w*scale)/2)+'px';
-    popup.focus();popup.print();
-  };
-  popup.addEventListener('load',()=>popup.setTimeout(fitAndPrint,350));
-  if(popup.document.readyState==='complete')popup.setTimeout(fitAndPrint,350);
-  document.getElementById('treeStatus').textContent='Opened a separate print view containing only the fully expanded family tree.';
+ const popup=window.open('','_blank');if(!popup){status.textContent='Allow pop-ups for this website and try again.';return}
+ const {svg,width,height}=createGraphic(true,'');
+ svg.removeAttribute('width');svg.removeAttribute('height');svg.setAttribute('width','100%');svg.setAttribute('height','100%');svg.setAttribute('preserveAspectRatio','xMidYMid meet');
+ // The only printable content is a single fixed A2 page; no overflow, blank lead page, or website header.
+ const markup=`<!doctype html><html><head><meta charset="utf-8"><title>Acharya Family Tree — A2</title><style>@page{size:594mm 420mm;margin:0}*{box-sizing:border-box}html,body{margin:0;padding:0;width:594mm;height:420mm;overflow:hidden;background:white}#sheet{width:594mm;height:420mm;padding:8mm;display:flex;flex-direction:column;align-items:stretch;overflow:hidden;break-after:avoid;page-break-after:avoid}h1{font:700 18pt Georgia,serif;text-align:center;color:#94651c;margin:0 0 3mm;flex:0 0 auto}#drawing{width:100%;flex:1;min-height:0;overflow:hidden}svg{display:block;width:100%;height:100%}@media print{html,body,#sheet{width:594mm!important;height:420mm!important;overflow:hidden!important}h1{margin-top:0!important}}</style></head><body><div id="sheet"><h1>Āchārya Prapañca — Family Genealogy</h1><div id="drawing">${svg.outerHTML}</div></div></body></html>`;
+ popup.document.open();popup.document.write(markup);popup.document.close();
+ popup.focus();popup.setTimeout(()=>popup.print(),400);
+ status.textContent='A2 landscape print view opened: only the fully expanded family tree.';
 });
 </script>
 </body></html>
