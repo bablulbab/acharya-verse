@@ -49,6 +49,15 @@
 #treeScroll{overflow:auto;max-height:78vh;padding:12px;background:#fffdfa}
 #familyTree{display:block!important;width:max-content!important;min-width:0!important;padding:0!important;margin:0!important;border:0!important}
 #familyTree>svg{max-width:none!important}
+/* Palm-leaf folio gallery */
+.folio-gallery{max-width:1250px;margin:38px auto 18px;padding:24px;background:#fff8e9;border:1px solid #d9b875;border-radius:17px;box-shadow:0 12px 32px #6d4c1c20}
+.folio-gallery h3{margin:0 0 7px}.folio-gallery p{margin:8px auto 17px;max-width:760px}
+.folio-display{display:block;width:100%;height:auto;border-radius:15px;box-shadow:0 8px 22px #38210b40;background:#a9681c}
+.folio-nav,.folio-downloads{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;align-items:center;margin-top:17px}
+.folio-nav button{border:1px solid #b88732;background:#fff;color:#81571d;border-radius:8px;padding:11px 17px;cursor:pointer;font-weight:bold}
+.folio-nav button:disabled{opacity:.4;cursor:not-allowed}.folio-count{font-weight:bold;color:#81571d}
+.folio-downloads a{font:700 13px Arial,sans-serif;color:#82561b;text-decoration:underline}
+@media(max-width:600px){.folio-gallery{padding:12px}.folio-nav button{padding:9px 12px}}
 </style>
 </head>
 <body>
@@ -59,7 +68,13 @@
 <section class="content" id="founder"><p class="eyebrow">The Founder</p><h2>Bibhu “Bibs” Acharya</h2><img class="section-image portrait" src="2.png" alt="Bibhu Acharya, founder"><p>An engineer by profession, a writer by passion, and an explorer by nature.</p><p>Born in Cuttack and raised in Keonjhar, Odisha, Bibs began his professional journey with the Indian Navy before pursuing an international career in naval architecture, shipbuilding and maritime engineering.</p><p>Beyond engineering, he is a poet, author, motivational speaker and lifelong explorer of philosophy, spirituality and human potential.</p><p>His belief is simple: kindness transcends borders, wisdom grows when shared, and humanity comes first.</p></section>
 <section class="content" id="publications"><p class="eyebrow">Our Publications</p><h2>Books, Poetry &amp; Ideas</h2><img class="section-image portrait" src="5.png" alt="Literary author portrait"><div class="cards"><div class="card"><h3>1600 Mega Joules</h3><p>Awaken the Hidden Sun Within</p><a href="https://1600megajoules.com/">Explore the Book</a></div><div class="card"><h3>The Tomato Principle</h3><p>A forthcoming literary work.</p></div><div class="card"><h3>Devotional Poetry Collection</h3><p>Preserving the Krishna devotional poetry of Dwarikanath Acharya.</p><p><em>In preparation.</em></p></div></div></section>
 <section class="content" id="heritage"><p class="eyebrow">Our Heritage</p><h2>Rooted in Legacy. Reaching Toward Tomorrow.</h2><div class="heritage-images"><figure><img src="4.png" alt="Black and white institutional seal"><figcaption><em>The Institutional Seal</em></figcaption></figure><img src="7.png" alt="Traditional heritage portrait"></div><p>Āchārya Prapañca honours the literary, spiritual and cultural heritage of the Acharya family.</p><p>Among the treasures of this heritage are the devotional compositions of Dwarikanath Acharya, whose Krishna janana and bhajana poetry reflects a deeply personal tradition of devotion and artistic expression.</p><p>We aspire to preserve these writings for future generations while creating space for new voices, new ideas and new possibilities.</p></section>
-<section class="content lineage" id="lineage"><p class="eyebrow">Our Lineage</p><h2>The Roots That Ground Us. The Branches That Carry Us Forward.</h2><div class="lineage-intro"><p>Every family carries a universe of stories. This living genealogy preserves the names, relationships and memories of the Acharya family, with space for future discoveries.</p></div><div class="tree-controls"><input id="treeSearch" type="search" placeholder="Search a family member…" aria-label="Search family tree"><button id="expandAll" type="button">Expand all</button><button id="collapseAll" type="button">Collapse all</button><button id="printTree" type="button">Print / Save as PDF (A2)</button></div><p class="tree-help">The chart flows from top to bottom with compact, staggered sibling branches. Scroll horizontally to explore wide generations; click the ▸ arrow beside a name to reveal descendants. Spouses appear beside partners. “Name to be added” entries are reserved for future updates. The Print / Save as PDF button opens a separate tree-only A2 landscape print view, with every branch expanded. The complete tree is fitted to one sheet, so text may be small.</p><p class="tree-status" id="treeStatus" role="status"></p><div class="tree-scroll" id="treeScroll"><ul class="family-tree" id="familyTree"></ul></div><div class="lineage-features"><div class="lineage-feature"><strong>Our Ancestors</strong><p>Remembering those who shaped our beginnings.</p></div><div class="lineage-feature"><strong>Our Generations</strong><p>Tracing relationships across time.</p></div><div class="lineage-feature"><strong>Our Stories</strong><p>Preserving names, photographs and histories.</p></div></div></section>
+<section class="content lineage" id="lineage"><p class="eyebrow">Our Lineage</p><h2>The Roots That Ground Us. The Branches That Carry Us Forward.</h2><div class="lineage-intro"><p>Every family carries a universe of stories. This living genealogy preserves the names, relationships and memories of the Acharya family, with space for future discoveries.</p></div><div class="tree-controls"><input id="treeSearch" type="search" placeholder="Search a family member…" aria-label="Search family tree"><button id="expandAll" type="button">Expand all</button><button id="collapseAll" type="button">Collapse all</button><button id="showFolios" type="button">Download the 3-Page Lineage</button></div><p class="tree-help">The chart flows from top to bottom with compact, staggered sibling branches. Scroll horizontally to explore wide generations; click the ▸ arrow beside a name to reveal descendants. Spouses appear beside partners. “Name to be added” entries are reserved for future updates. Select “Download the 3-Page Lineage” to view the illustrated palm-leaf folios and download each high-resolution image.</p><p class="tree-status" id="treeStatus" role="status"></p><div class="tree-scroll" id="treeScroll"><ul class="family-tree" id="familyTree"></ul></div><div class="folio-gallery" id="folioGallery" hidden>
+<h3>The Acharya Lineage — Three Ancient Palm-Leaf Folios</h3>
+<p>Browse the folios one by one. Download each original high-resolution JPG using the links below. Folio II remains a living record and may be updated as more family information is collected.</p>
+<img id="folioImage" class="folio-display" src="001.jpg" alt="Folio I — The Ancestral Lineage" loading="lazy">
+<div class="folio-nav"><button type="button" id="folioPrev">← Previous folio</button><span id="folioCounter" class="folio-count" aria-live="polite">Folio 1 of 3</span><button type="button" id="folioNext">Next folio →</button></div>
+<div class="folio-downloads"><a href="001.jpg" download="001.jpg">Download Folio I (JPG)</a><a href="002.jpg" download="002.jpg">Download Folio II (JPG)</a><a href="003.jpg" download="003.jpg">Download Folio III (JPG)</a></div>
+</div><div class="lineage-features"><div class="lineage-feature"><strong>Our Ancestors</strong><p>Remembering those who shaped our beginnings.</p></div><div class="lineage-feature"><strong>Our Generations</strong><p>Tracing relationships across time.</p></div><div class="lineage-feature"><strong>Our Stories</strong><p>Preserving names, photographs and histories.</p></div></div></section>
 <section class="content" id="insights"><p class="eyebrow">Insights &amp; Media</p><h2>Thoughts That Invite Reflection</h2><img class="section-image portrait" src="6.png" alt="Editorial portrait"><p>Essays, poetry, reflections and perspectives on consciousness, humanity, personal growth and the art of living.</p><p><em>Coming soon.</em></p></section>
 <section class="content" id="connect"><p class="eyebrow">Connect</p><h2>Every Meaningful Conversation Begins Somewhere</h2><p>For literary enquiries, ideas and collaborations, we welcome thoughtful conversations.</p><p><em>Contact details will be added before launch.</em></p></section>
 </main><footer><strong>Āchārya Prapañca</strong><p>Illuminating Minds. Awakening Souls. Elevating Consciousness.</p><p><strong>One Consciousness at a Time.</strong></p><p>© 2026 Āchārya Prapañca. All rights reserved.</p></footer>
@@ -168,15 +183,28 @@ document.getElementById('expandAll').addEventListener('click',()=>{walk(family,p
 document.getElementById('collapseAll').addEventListener('click',()=>{walk(family,p=>p._collapsed=true);family._collapsed=false;render();status.textContent='Branches collapsed. Click a name to expand.'});
 document.getElementById('treeSearch').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();if(q)openMatches(family,q);render()});
 render();
-document.getElementById('printTree').addEventListener('click',()=>{
- const popup=window.open('','_blank');if(!popup){status.textContent='Allow pop-ups for this website and try again.';return}
- const {svg,width,height}=createGraphic(true,'');
- svg.removeAttribute('width');svg.removeAttribute('height');svg.setAttribute('width','100%');svg.setAttribute('height','100%');svg.setAttribute('preserveAspectRatio','xMidYMid meet');
- // The only printable content is a single fixed A2 page; no overflow, blank lead page, or website header.
- const markup=`<!doctype html><html><head><meta charset="utf-8"><title>Acharya Family Tree — A2</title><style>@page{size:594mm 420mm;margin:0}*{box-sizing:border-box}html,body{margin:0;padding:0;width:594mm;height:420mm;overflow:hidden;background:white}#sheet{width:594mm;height:420mm;padding:8mm;display:flex;flex-direction:column;align-items:stretch;overflow:hidden;break-after:avoid;page-break-after:avoid}h1{font:700 18pt Georgia,serif;text-align:center;color:#94651c;margin:0 0 3mm;flex:0 0 auto}#drawing{width:100%;flex:1;min-height:0;overflow:hidden}svg{display:block;width:100%;height:100%}@media print{html,body,#sheet{width:594mm!important;height:420mm!important;overflow:hidden!important}h1{margin-top:0!important}}</style></head><body><div id="sheet"><h1>Āchārya Prapañca — Family Genealogy</h1><div id="drawing">${svg.outerHTML}</div></div></body></html>`;
- popup.document.open();popup.document.write(markup);popup.document.close();
- popup.focus();popup.setTimeout(()=>popup.print(),400);
- status.textContent='A2 landscape print view opened: only the fully expanded family tree.';
+// Three-folio gallery. Replacing 002.jpg in the repository updates Folio II automatically.
+const folios=[
+ {src:'001.jpg',title:'Folio I — The Ancestral Lineage'},
+ {src:'002.jpg',title:'Folio II — Descendants of Satyabati Mishra'},
+ {src:'003.jpg',title:'Folio III — Descendants of Dwarika Nath Acharya'}
+];
+let folioIndex=0;
+const folioGallery=document.getElementById('folioGallery');
+function showFolio(i){
+ folioIndex=Math.max(0,Math.min(folios.length-1,i));
+ document.getElementById('folioImage').src=folios[folioIndex].src;
+ document.getElementById('folioImage').alt=folios[folioIndex].title;
+ document.getElementById('folioCounter').textContent=`Folio ${folioIndex+1} of ${folios.length}`;
+ document.getElementById('folioPrev').disabled=folioIndex===0;
+ document.getElementById('folioNext').disabled=folioIndex===folios.length-1;
+}
+document.getElementById('showFolios').addEventListener('click',()=>{
+ folioGallery.hidden=false;showFolio(0);folioGallery.scrollIntoView({behavior:'smooth',block:'start'});
 });
+document.getElementById('folioPrev').addEventListener('click',()=>showFolio(folioIndex-1));
+document.getElementById('folioNext').addEventListener('click',()=>showFolio(folioIndex+1));
+showFolio(0);
+
 </script>
 </body></html>
