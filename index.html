@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="Āchārya Prapañca — an evolving universe of wisdom, literature, heritage, lineage and human consciousness.">
+
+  <title>Āchārya Prapañca | One Consciousness at a Time</title>
+
+  <style>
+    :root {
+      --gold: #b88632;
+      --gold-dark: #94651c;
+      --ink: #28394b;
+      --cream: #fffaf0;
+      --blue: #e9f3fb;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(
+        135deg,
+        #fffaf0 0%,
+        #fff3d9 45%,
+        #eaf4fc 100%
+      );
+      line-height: 1.7;
+    }
+
+    header {
+      background: rgba(255,255,255,0.96);
+      padding: 18px 4%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ead9b6;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand {
+      color: var(--gold-dark);
+      font-size: 22px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--ink);
+      text-decoration: none;
+      font: 14px Arial, sans-serif;
+      transition: color 0.2s;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      color: var(--gold-dark);
+      text-decoration: underline;
+    }
+
+    .hero {
+      min-height: 75vh;
+      padding: 95px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(
+        ellipse at top,
+        #ffffff 0%,
+        #fff4d9 55%,
+        #eaf4fc 100%
+      );
+    }
+
+    .eyebrow {
+      color: var(--gold-dark);
+      letter-spacing: 2.5px;
+      font: bold 13px Arial, sans-serif;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 82px);
+      margin: 15px 0;
+      color: #8e611c;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 43px);
+      line-height: 1.25;
+    }
+
+    h3 {
+      color: #81571d;
+    }
+
+    .sanskrit {
+      font-size: 26px;
+      color: #a17326;
+    }
+
+    .motto {
+      font-size: clamp(18px, 2.4vw, 26px);
+      max-width: 900px;
+      margin: 22px auto 5px;
+    }
+
+    .closing {
+      font-size: 23px;
+      font-weight: bold;
+      color: #a46c18;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 7px;
+      background: #b88732;
+      color: white;
+      text-decoration: none;
+      font: bold 14px Arial, sans-serif;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .btn:hover {
+      background: #94651c;
+      transform: translateY(-2px);
+    }
+
+    .btn.secondary {
+      background: white;
+      color: #94651c;
+      border: 1px solid #b88732;
+    }
+
+    section.content {
+      padding: 70px 8%;
+      text-align: center;
+      scroll-margin-top: 90px;
+    }
+
+    section.content:nth-of-type(even) {
+      background: rgba(255,255,255,0.65);
+    }
+
+    section.content p {
+      max-width: 780px;
+      margin: 15px auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(230px, 1fr)
+      );
+      gap: 22px;
+      max-width: 1050px;
+      margin: 35px auto;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 8px 28px #8b70301a;
+      border: 1px solid #f0e1c4;
+    }
+
+    .card a {
+      color: #95651e;
+      font-weight: bold;
+    }
+
+    /* FAMILY LINEAGE SECTION */
+
+    .lineage {
+      background: linear-gradient(
+        135deg,
+        #fff9ed,
+        #f7e9ca,
+        #edf5fb
+      ) !important;
+    }
+
+    .lineage-intro {
+      max-width: 780px;
+      margin: 0 auto 30px;
+    }
+
+    .family-tree-preview {
+      max-width: 900px;
+      margin: 35px auto;
+      padding: 35px 25px;
+      background: rgba(255,255,255,0.88);
+      border: 1px solid #dfc58d;
+      border-radius: 18px;
+      box-shadow: 0 12px 35px #8b70301a;
+    }
+
+    .tree-symbol {
+      font-size: 55px;
+      line-height: 1.3;
+    }
+
+    .family-tree-preview h3 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .family-tree-preview p {
+      max-width: 650px;
+    }
+
+    .lineage-features {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(190px, 1fr)
+      );
+      gap: 18px;
+      max-width: 900px;
+      margin: 30px auto 0;
+    }
+
+    .lineage-feature {
+      background: #fffdf8;
+      border: 1px solid #ebd9b6;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .lineage-feature strong {
+      color: #90621f;
+    }
+
+    footer {
+      text-align: center;
+      background: #f5e8ce;
+      padding: 35px 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 70px 18px;
+      }
+
+      section.content {
+        padding: 55px 6%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .brand {
+        font-size: 20px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      .family-tree-preview {
+        padding: 25px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MAIN NAVIGATION -->
+
+  <header>
+    <div class="brand">आचार्य प्रपञ्च</div>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#philosophy">Our Philosophy</a>
+      <a href="#founder">Founder</a>
+      <a href="#publications">Publications</a>
+      <a href="#heritage">Heritage</a>
+      <a href="#lineage">Lineage</a>
+      <a href="#insights">Insights</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOMEPAGE HERO -->
+
+    <section class="hero" id="home">
+
+      <p class="eyebrow">
+        Welcome to the Universe of the Acharyas
+      </p>
+
+      <h1>आचार्य प्रपञ्च</h1>
+
+      <p class="sanskrit">आचार्याणां प्रपञ्चः</p>
+
+      <p class="eyebrow">Āchārya Prapañca</p>
+
+      <p class="motto">
+        Illuminating Minds. Awakening Souls.
+        Elevating Consciousness.
+      </p>
+
+      <p class="closing">
+        One Consciousness at a Time.
+      </p>
+
+      <p>धियो यो नः प्रचोदयात्॥</p>
+
+      <small>Rigveda 3.62.10</small>
+
+      <div class="actions">
+        <a class="btn" href="#philosophy">
+          Explore Our Universe
+        </a>
+
+        <a class="btn secondary" href="#publications">
+          Discover Our Publications
+        </a>
+      </div>
+
+    </section>
+
+    <!-- OUR PHILOSOPHY -->
+
+    <section class="content" id="philosophy">
+
+      <p class="eyebrow">Our Philosophy</p>
+
+      <h2>Wisdom Is Meant to Be Shared</h2>
+
+      <p>
+        Āchārya Prapañca is an evolving home for ideas,
+        literature, heritage, learning and creative endeavour.
+        We believe that a single thought can inspire an awakening,
+        and that awakening can transform a life.
+      </p>
+
+      <p>
+        Our purpose is to illuminate minds, awaken souls,
+        and elevate consciousness through knowledge,
+        compassion, creativity and meaningful human connection.
+      </p>
+
+    </section>
+
+    <!-- FOUNDER -->
+
+    <section class="content" id="founder">
+
+      <p class="eyebrow">The Founder</p>
+
+      <h2>Bibhu “Bibs” Acharya</h2>
+
+      <p>
+        An engineer by profession, a writer by passion,
+        and an explorer by nature.
+      </p>
+
+      <p>
+        Born in Cuttack and raised in Keonjhar, Odisha,
+        Bibs began his professional journey with the Indian Navy
+        before pursuing an international career in naval
+        architecture, shipbuilding and maritime engineering.
+      </p>
+
+      <p>
+        Beyond engineering, he is a poet, author,
+        motivational speaker and lifelong explorer
+        of philosophy, spirituality and human potential.
+      </p>
+
+      <p>
+        His belief is simple: kindness transcends borders,
+        wisdom grows when shared, and humanity comes first.
+      </p>
+
+    </section>
+
+    <!-- PUBLICATIONS -->
+
+    <section class="content" id="publications">
+
+      <p class="eyebrow">Our Publications</p>
+
+      <h2>Books, Poetry & Ideas</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>1600 Mega Joules</h3>
+          <p>Awaken the Hidden Sun Within</p>
+          <a href="https://1600megajoules.com/">
+            Explore the Book
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>The Tomato Principle</h3>
+          <p>A forthcoming literary work.</p>
+        </div>
+
+        <div class="card">
+          <h3>Devotional Poetry Collection</h3>
+          <p>
+            Preserving the Krishna devotional poetry
+            of Dwarikanath Acharya.
+          </p>
+          <p><em>In preparation.</em></p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- HERITAGE -->
+
+    <section class="content" id="heritage">
+
+      <p class="eyebrow">Our Heritage</p>
+
+      <h2>
+        Rooted in Legacy. Reaching Toward Tomorrow.
+      </h2>
+
+      <p>
+        Āchārya Prapañca honours the literary,
+        spiritual and cultural heritage of the Acharya family.
+      </p>
+
+      <p>
+        Among the treasures of this heritage are the
+        devotional compositions of Dwarikanath Acharya,
+        whose Krishna janana and bhajana poetry
+        reflects a deeply personal tradition of devotion
+        and artistic expression.
+      </p>
+
+      <p>
+        We aspire to preserve these writings
+        for future generations while creating space
+        for new voices, new ideas and new possibilities.
+      </p>
+
+    </section>
+
+    <!-- LINEAGE / FAMILY TREE -->
+
+    <section class="content lineage" id="lineage">
+
+      <p class="eyebrow">Our Lineage</p>
+
+      <h2>
+        The Roots That Ground Us.
+        The Branches That Carry Us Forward.
+      </h2>
+
+      <div class="lineage-intro">
+
+        <p>
+          Every family carries a universe of stories.
+          Some are written in books, some are preserved
+          in memories, and others live quietly through
+          the generations that follow.
+        </p>
+
+        <p>
+          The Acharya family tree is our effort
+          to honour those who came before us,
+          celebrate those who walk beside us,
+          and preserve a meaningful record
+          for those yet to come.
+        </p>
+
+      </div>
+
+      <div class="family-tree-preview">
+
+        <div class="tree-symbol" aria-hidden="true">
+          🌳
+        </div>
+
+        <h3>The Acharya Family Tree</h3>
+
+        <p>
+          A living record of ancestry, relationships,
+          memories and generations.
+        </p>
+
+        <p>
+          This section will feature a visual family tree
+          with connected generations, family photographs,
+          names and biographical details.
+        </p>
+
+        <p>
+          <strong>
+            The interactive family tree is in preparation.
+          </strong>
+        </p>
+
+      </div>
+
+      <div class="lineage-features">
+
+        <div class="lineage-feature">
+          <strong>Our Ancestors</strong>
+          <p>
+            Remembering the generations
+            who shaped our beginnings.
+          </p>
+        </div>
+
+        <div class="lineage-feature">
+          <strong>Our Generations</strong>
+          <p>
+            Tracing family relationships
+            across time.
+          </p>
+        </div>
+
+        <div class="lineage-feature">
+          <strong>Our Stories</strong>
+          <p>
+            Preserving memories, photographs
+            and personal histories.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- INSIGHTS -->
+
+    <section class="content" id="insights">
+
+      <p class="eyebrow">Insights</p>
+
+      <h2>Thoughts That Invite Reflection</h2>
+
+      <p>
+        Essays, poetry, reflections and perspectives
+        on consciousness, humanity, personal growth
+        and the art of living.
+      </p>
+
+      <p><em>Coming soon.</em></p>
+
+    </section>
+
+    <!-- CONNECT -->
+
+    <section class="content" id="connect">
+
+      <p class="eyebrow">Connect</p>
+
+      <h2>
+        Every Meaningful Conversation Begins Somewhere
+      </h2>
+
+      <p>
+        For literary enquiries, ideas and collaborations,
+        we welcome thoughtful conversations.
+      </p>
+
+      <p>
+        <em>
+          Contact details will be added before launch.
+        </em>
+      </p>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <strong>Āchārya Prapañca</strong>
+
+    <p>
+      Illuminating Minds. Awakening Souls.
+      Elevating Consciousness.
+    </p>
+
+    <p>
+      <strong>One Consciousness at a Time.</strong>
+    </p>
+
+    <p>
+      © 2026 Āchārya Prapañca.
+      All rights reserved.
+    </p>
+
+  </footer>
+
+</body>
+</html>
