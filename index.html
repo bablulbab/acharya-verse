@@ -137,24 +137,37 @@ section{scroll-margin-top:100px}
  .hero-cinematic .hero-actions{flex-direction:column}
  .hero-cinematic .hero-pill{flex:auto;min-height:52px}
 }
+
+/* Philosophy: full-width navy emblem gallery and refined cream reading area */
+#philosophy.content{padding:0!important;background:#fffaf1!important;overflow:hidden}
+#philosophy .philosophy-emblem-band{padding:clamp(115px,12vw,155px) 5% 36px;background:radial-gradient(ellipse at 50% 44%,#19345b 0%,#091831 58%,#030b1b 100%);display:flex;justify-content:center;align-items:center;position:relative}
+#philosophy .philosophy-emblem-band::after{content:"";position:absolute;bottom:0;left:0;right:0;height:36px;background:linear-gradient(transparent,#fffaf1)}
+#philosophy .philosophy-emblem-band img{display:block;width:min(100%,510px);height:auto;border-radius:17px;box-shadow:0 18px 48px #0008}
+#philosophy .philosophy-copy{padding:clamp(30px,5vw,62px) 6% clamp(55px,7vw,90px);max-width:1150px;margin:auto}
+#philosophy .philosophy-copy h2{font-size:clamp(34px,4.6vw,62px);color:#293b50;margin:12px 0 26px}
+#philosophy .philosophy-copy>p:not(.eyebrow){max-width:980px;margin:18px auto;font-size:clamp(17px,1.55vw,22px);line-height:1.65}
+#philosophy .foundation-pill{border-radius:999px;padding:17px 35px;color:#112039;background:linear-gradient(120deg,#ffe2a1,#bf8a38);border:1px solid #e5b96a;box-shadow:0 10px 25px #98692235;transition:transform .2s,box-shadow .2s}
+#philosophy .foundation-pill:hover{transform:translateY(-3px);box-shadow:0 15px 30px #98692255;background:linear-gradient(120deg,#ffe8b5,#c99747)}
+@media(max-width:700px){#philosophy .philosophy-emblem-band{padding-top:105px;padding-bottom:24px}#philosophy .philosophy-copy{padding:32px 6% 55px}}
+@media(prefers-reduced-motion:reduce){#philosophy .foundation-pill{transition:none}}
 </style>
 </head>
 <body>
-<header class="floating-header"><a class="brand" href="#home">आचार्य प्रपञ्च</a><nav class="floating-nav" aria-label="Main navigation"><a href="#home">Home</a><a href="#philosophy">Our Philosophy</a><a href="#founder">Founder</a><a href="#publications">Publications</a><a href="#heritage">Heritage</a><a href="lineage.html">Lineage</a><a href="#insights">Insights</a><a href="connect.html">Connect</a></nav><details class="mobile-navigation"><summary aria-label="Open navigation menu">☰ Menu</summary><nav aria-label="Mobile navigation"><a href="#home">Home</a><a href="#philosophy">Our Philosophy</a><a href="#founder">Founder</a><a href="#publications">Publications</a><a href="#heritage">Heritage</a><a href="lineage.html">Lineage</a><a href="#insights">Insights</a><a href="connect.html">Connect</a></nav></details></header>
+<header class="floating-header"><a class="brand" href="#home">आचार्य प्रपञ्च</a><nav aria-label="Main navigation" class="floating-nav"><a href="#home">Home</a><a href="#philosophy">Our Philosophy</a><a href="#founder">Founder</a><a href="#publications">Publications</a><a href="#heritage">Heritage</a><a href="lineage.html">Lineage</a><a href="#insights">Insights</a><a href="connect.html">Connect</a></nav><details class="mobile-navigation"><summary aria-label="Open navigation menu">☰ Menu</summary><nav aria-label="Mobile navigation"><a href="#home">Home</a><a href="#philosophy">Our Philosophy</a><a href="#founder">Founder</a><a href="#publications">Publications</a><a href="#heritage">Heritage</a><a href="lineage.html">Lineage</a><a href="#insights">Insights</a><a href="connect.html">Connect</a></nav></details></header>
 <main>
-<section class="hero hero-cinematic" id="home" aria-label="Welcome to Āchārya Prapañca">
-  <div class="hero-art"><img src="1.png" alt="Āchārya Prapañca emblem, Sanskrit inscription, motto and Vedic maxim" fetchpriority="high"/></div>
-  <aside class="hero-sidebar" aria-label="Explore Āchārya Prapañca">
-    <p class="hero-side-title">Welcome to the Universe of the Acharyas</p>
-    <p class="hero-side-caption">A universe of wisdom, heritage and awakening.</p>
-    <div class="hero-actions">
-      <a class="hero-pill" href="#philosophy">Explore Our Universe</a>
-      <a class="hero-pill alt" href="#publications">Discover Our Publications</a>
-    </div>
-  </aside>
-  <a class="hero-scroll" href="#philosophy" aria-label="Scroll to Our Philosophy">SCROLL TO EXPLORE ↓</a>
+<section aria-label="Welcome to Āchārya Prapañca" class="hero hero-cinematic" id="home">
+<div class="hero-art"><img alt="Āchārya Prapañca emblem, Sanskrit inscription, motto and Vedic maxim" fetchpriority="high" src="1.png"/></div>
+<aside aria-label="Explore Āchārya Prapañca" class="hero-sidebar">
+<p class="hero-side-title">Welcome to the Universe of the Acharyas</p>
+<p class="hero-side-caption">A universe of wisdom, heritage and awakening.</p>
+<div class="hero-actions">
+<a class="hero-pill" href="#philosophy">Explore Our Universe</a>
+<a class="hero-pill alt" href="#publications">Discover Our Publications</a>
+</div>
+</aside>
+<a aria-label="Scroll to Our Philosophy" class="hero-scroll" href="#philosophy">SCROLL TO EXPLORE ↓</a>
 </section>
-<section class="content" id="philosophy"><img alt="Philosophy emblem" class="section-image" src="3.png"/><p class="eyebrow">Our Philosophy</p><h2>Wisdom Is Meant to Be Shared</h2><p>Āchārya Prapañca is an evolving home for ideas, literature, heritage, learning and creative endeavour. We believe that a single thought can inspire an awakening, and that awakening can transform a life.</p><p>Our purpose is to illuminate minds, awaken souls, and elevate consciousness through knowledge, compassion, creativity and meaningful human connection.</p><div class="actions"><a class="btn" href="institutional-identity.html">Explore Our Foundations</a></div></section>
+<section class="content" id="philosophy"><div class="philosophy-emblem-band"><img alt="Golden Āchārya Prapañca philosophy emblem" loading="lazy" src="3.png"/></div><div class="philosophy-copy"><p class="eyebrow">Our Philosophy</p><h2>Wisdom Is Meant to Be Shared</h2><p>Āchārya Prapañca is an evolving home for ideas, literature, heritage, learning and creative endeavour. We believe that a single thought can inspire an awakening, and that awakening can transform a life.</p><p>Our purpose is to illuminate minds, awaken souls, and elevate consciousness through knowledge, compassion, creativity and meaningful human connection.</p><div class="actions"><a class="btn foundation-pill" href="institutional-identity.html">Explore Our Foundations</a></div></div></section>
 <section class="content" id="founder"><p class="eyebrow">The Founder</p><h2>Bibhu “Bibs” Acharya</h2><img alt="Bibhu Acharya, founder" class="section-image portrait" src="2.png"/><p>An engineer by profession, a writer by passion, and an explorer by nature.</p><p>Born in Cuttack and raised in Keonjhar, Odisha, Bibs began his professional journey with the Indian Navy before pursuing an international career in naval architecture, shipbuilding and maritime engineering.</p><p>Beyond engineering, he is a poet, author, motivational speaker and lifelong explorer of philosophy, spirituality and human potential.</p><p>His belief is simple: kindness transcends borders, wisdom grows when shared, and humanity comes first.</p><div class="actions"><a class="btn" href="founder-biography.html">Read More About the Founder</a></div></section>
 <section class="content" id="publications"><p class="eyebrow">Our Publications</p><h2>Books, Poetry &amp; Ideas</h2><img alt="Literary author portrait" class="section-image portrait" src="5.png"/><div class="cards"><div class="card"><h3>1600 Mega Joules</h3><p>Awaken the Hidden Sun Within</p><a href="https://1600megajoules.com/">Explore the Book</a></div><div class="card"><h3>The Tomato Principle</h3><p>A forthcoming literary work.</p></div><div class="card"><h3>Devotional Poetry Collection</h3><p>Preserving the Krishna devotional poetry of Dwarikanath Acharya.</p><p><em>In preparation.</em></p></div></div></section>
 <section class="content" id="heritage"><p class="eyebrow">Our Heritage</p><h2>Rooted in Legacy. Reaching Toward Tomorrow.</h2><div class="heritage-images"><figure><img alt="Black and white institutional seal" src="4.png"/><figcaption><em>The Institutional Seal</em></figcaption></figure><img alt="Traditional heritage portrait" src="7.png"/></div><p>Āchārya Prapañca honours the literary, spiritual and cultural heritage of the Acharya family.</p><p>Among the treasures of this heritage are the devotional compositions of Dwarikanath Acharya, whose Krishna janana and bhajana poetry reflects a deeply personal tradition of devotion and artistic expression.</p><p>We aspire to preserve these writings for future generations while creating space for new voices, new ideas and new possibilities.</p></section>
@@ -162,5 +175,4 @@ section{scroll-margin-top:100px}
 <section class="content" id="insights"><p class="eyebrow">Insights &amp; Media</p><h2>Thoughts That Invite Reflection</h2><img alt="Editorial portrait" class="section-image portrait" src="6.png"/><p>Essays, poetry, reflections and perspectives on consciousness, humanity, personal growth and the art of living.</p><p><em>Coming soon.</em></p></section>
 <section class="content" id="connect"><p class="eyebrow">Connect</p><h2>Every Meaningful Conversation Begins Somewhere</h2><p>For literary enquiries, ideas and collaborations, we welcome thoughtful conversations.</p><div class="actions"><a class="btn" href="connect.html">Visit Our Contact Page</a></div></section>
 </main><footer><strong>Āchārya Prapañca</strong><p>Illuminating Minds. Awakening Souls. Elevating Consciousness.</p><p><strong>One Consciousness at a Time.</strong></p><p>© 2026 Āchārya Prapañca. All rights reserved.</p></footer>
-
 </body></html>
