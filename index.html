@@ -96,6 +96,47 @@ section{scroll-margin-top:100px}
 @media(max-width:1250px){.floating-header .floating-nav{display:none}.mobile-navigation{display:block}}
 @media(max-width:900px){.hero.hero-cinematic{padding-top:105px}.hero-cinematic .hero-art img{max-height:none}}
 @media(prefers-reduced-motion:reduce){.floating-header .floating-nav a,.mobile-navigation nav a{transition:none}}
+
+/* Full-bleed cinematic hero: keep the emblem unobstructed and the navigation floating. */
+.hero.hero-cinematic{
+  display:block;position:relative;width:100%;min-height:100svh;
+  padding:0!important;margin:0;overflow:hidden;
+  background:#020b20;text-align:left;
+}
+.hero-cinematic .hero-art{display:block;width:100%;height:100svh;min-height:650px;position:relative}
+.hero-cinematic .hero-art img{
+  display:block;width:100%;height:100%;max-height:none!important;
+  object-fit:contain;object-position:center center;border-radius:0;
+  filter:none;
+}
+.hero-cinematic .hero-sidebar{
+  position:absolute;z-index:2;right:clamp(18px,2.4vw,52px);top:50%;
+  transform:translateY(-36%);width:clamp(190px,19vw,320px);max-width:none;
+  display:flex;flex-direction:column;gap:14px;text-align:center;
+  padding:clamp(12px,1.5vw,22px);border-radius:25px;
+  background:linear-gradient(120deg,rgba(2,12,35,.1),rgba(2,12,35,.46));
+}
+.hero-cinematic .hero-side-title{font-size:clamp(10px,.9vw,13px);letter-spacing:1.5px;line-height:1.5}
+.hero-cinematic .hero-side-caption{font-size:clamp(14px,1.35vw,20px);line-height:1.45}
+.hero-cinematic .hero-actions{gap:13px}
+.hero-cinematic .hero-pill{min-height:57px;padding:12px 15px;font-size:clamp(12px,1vw,15px)}
+.hero-cinematic .hero-scroll{z-index:3;bottom:14px;left:50%;white-space:nowrap;text-shadow:0 2px 8px #000}
+/* On narrower viewports, retain the full image and put the actions below it. */
+@media(max-width:1100px){
+ .hero.hero-cinematic{min-height:0;display:flex;flex-direction:column;padding:0 0 48px!important;gap:0}
+ .hero-cinematic .hero-art{height:auto;min-height:0;padding-top:100px}
+ .hero-cinematic .hero-art img{width:100%;height:auto;max-height:none;object-fit:contain}
+ .hero-cinematic .hero-sidebar{position:static;transform:none;width:min(92%,650px);max-width:650px;margin:4px auto 20px;padding:14px;background:rgba(9,25,53,.65)}
+ .hero-cinematic .hero-actions{flex-direction:row;flex-wrap:wrap;justify-content:center}
+ .hero-cinematic .hero-pill{flex:1 1 210px}
+ .hero-cinematic .hero-scroll{bottom:13px}
+}
+@media(max-width:600px){
+ .hero-cinematic .hero-art{padding-top:82px}
+ .hero-cinematic .hero-sidebar{gap:11px}
+ .hero-cinematic .hero-actions{flex-direction:column}
+ .hero-cinematic .hero-pill{flex:auto;min-height:52px}
+}
 </style>
 </head>
 <body>
