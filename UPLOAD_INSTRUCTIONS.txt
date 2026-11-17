@@ -1,0 +1,22 @@
+ĀCHĀRYA PRAPAÑCA — WEBSITE UPDATE (17 NOVEMBER 2026)
+
+Upload these files to the ROOT of your existing GitHub repository bablulbab/acharya-verse, branch main.
+
+Files to upload / replace:
+- index.html (REPLACE existing index.html)
+- book-pages.css (same as supplied; optional to replace)
+- man-who-doubted-the-horizon.html (NEW)
+- horizon-cover-1.png, horizon-cover-2.png, horizon-cover-3.png (NEW)
+- blog.html (NEW)
+- believers-and-atheists.html (NEW)
+- proud-to-be-an-indian.html (NEW)
+- rendezvous-with-self.html (NEW)
+- prison-of-life.html (NEW)
+
+Do not delete or overwrite your existing images 1.png–7.png, lineage.html, or any other existing book/heritage pages.
+
+In GitHub: Add file > Upload files > drag the files INSIDE this ZIP into the upload area > Commit changes. For index.html, GitHub should register an overwrite; if your interface prevents replacing via upload, open index.html > Edit (pencil) > paste the new index.html content > Commit.
+
+Wait 1–3 minutes for GitHub Pages deployment, then hard refresh the website (Ctrl+Shift+R).
+
+This update does not change the grandfather's 1919–2000 date in other repository pages; that would need a separate edit to the file where it appears.
